@@ -12,12 +12,17 @@ pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
     digits
 }
 
-
 #[test]
 fn test_plus_one() {
     assert_eq!(plus_one(vec![1, 2, 3]), vec![1, 2, 4]);
     assert_eq!(plus_one(vec![4, 3, 2, 1]), vec![4, 3, 2, 2]);
     assert_eq!(plus_one(vec![9]), vec![1, 0]);
-    assert_eq!(plus_one(vec![9,8,7,6,5,4,3,2,1,0]), vec![9,8,7,6,5,4,3,2,1,1]);
-    assert_eq!(plus_one(vec![1, 2, 3, 4, 5, 6, 7, 8, 9]), vec![1, 2, 3, 4, 5, 6, 7, 9, 0]);
+    assert_eq!(
+        plus_one(vec![9, 8, 7, 6, 5, 4, 3, 2, 1, 0]),
+        vec![9, 8, 7, 6, 5, 4, 3, 2, 1, 1]
+    );
+    assert_eq!(
+        plus_one(vec![1, 2, 3, 4, 5, 6, 7, 8, 9]),
+        vec![1, 2, 3, 4, 5, 6, 7, 9, 0]
+    );
 }
