@@ -7,3 +7,5 @@ pub mod plus_one;
 pub mod remove_value;
 mod two_nums;
 pub mod valid_parentheses;
+pub mod goal_parser;
+mod balanced_strings;
