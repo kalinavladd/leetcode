@@ -11,3 +11,5 @@ pub mod goal_parser;
 mod balanced_strings;
 mod count_matches;
 pub mod build_array_from_permutation;
+pub mod shuffle_array;
+pub mod concatenation_array;
