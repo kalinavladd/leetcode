@@ -10,3 +10,4 @@ pub mod valid_parentheses;
 pub mod goal_parser;
 mod balanced_strings;
 mod count_matches;
+pub mod build_array_from_permutation;
