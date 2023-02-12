@@ -31,8 +31,22 @@ pub fn count_matches(items: Vec<Vec<String>>, rule_key: String, rule_value: Stri
 fn test_count_matches() {
     assert_eq!(
         count_matches(
-            vec![vec!["phone".to_string(),"blue".to_string(),"pixel".to_string()],
-                 vec!["computer".to_string(),"silver".to_string(),"lenovo".to_string()],
-                 vec!["phone".to_string(),"gold".to_string(),"iphone".to_string()]],
-                             "color".to_string(), "silver".to_string()), 1);
+            vec![
+                vec!["phone".to_string(), "blue".to_string(), "pixel".to_string()],
+                vec![
+                    "computer".to_string(),
+                    "silver".to_string(),
+                    "lenovo".to_string()
+                ],
+                vec![
+                    "phone".to_string(),
+                    "gold".to_string(),
+                    "iphone".to_string()
+                ]
+            ],
+            "color".to_string(),
+            "silver".to_string()
+        ),
+        1
+    );
 }

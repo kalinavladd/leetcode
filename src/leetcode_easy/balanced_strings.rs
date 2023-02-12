@@ -1,6 +1,4 @@
-
 pub fn balanced_string_split(s: String) -> i32 {
-
     let mut stack = 0;
     let mut result = 0;
 
@@ -8,7 +6,7 @@ pub fn balanced_string_split(s: String) -> i32 {
         match char {
             'R' => stack += 1,
             'L' => stack -= 1,
-            _ => panic!()
+            _ => panic!(),
         }
         if stack == 0 {
             result += 1
@@ -16,7 +14,6 @@ pub fn balanced_string_split(s: String) -> i32 {
     }
     result
 }
-
 
 #[test]
 fn test_balanced_string_split() {
