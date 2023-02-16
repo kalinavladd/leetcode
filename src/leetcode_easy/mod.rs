@@ -1,4 +1,5 @@
 mod add_binary;
+mod array_strings_are_equal;
 mod balanced_strings;
 mod build_array_from_permutation;
 mod concatenation_array;
@@ -21,5 +22,6 @@ mod restore_string;
 mod richest_customer_wealth;
 mod running_sum_array;
 mod shuffle_array;
+mod sum_odd_length_subarrays;
 mod two_nums;
 mod valid_parentheses;
