@@ -27,20 +27,19 @@ pub fn difference_of_sum(nums: Vec<i32>) -> i32 {
 }
 
 fn difference_of_sum_2(nums: Vec<i32>) -> i32 {
-        let sum = nums.iter().sum::<i32>();
-        let mut digits = 0;
+    let sum = nums.iter().sum::<i32>();
+    let mut digits = 0;
 
-        for mut a in nums {
-            while a > 0 {
-                digits += a % 10;
-                println!("{}", digits);
-                a /= 10;
-            }
+    for mut a in nums {
+        while a > 0 {
+            digits += a % 10;
+            println!("{}", digits);
+            a /= 10;
         }
-
-        i32::abs(sum - digits)
     }
 
+    i32::abs(sum - digits)
+}
 
 #[test]
 fn test_difference_of_sum() {
